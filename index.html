@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gaming rezervations</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to gaming rezervations system!</h1>
+        <p>You can reserve your places to play here.</p>
+    </header>
+    <main>
+        <form>
+            <div>
+                <label for="nick">Your nickname: </label>
+                <input type="text" id="nick" name="nick" placeholder="Jacob123">
+            </div>
+
+            <div>
+                <label for="placeNumber">Place number: </label>
+                <input type="number" id="placeNumber" name="placeNumber" placeholder="7">
+            </div>
+
+            <div>
+                <label for="time">Playing time: </label>
+                <input type="text" id="time" name="time" placeholder="3h">
+            </div>
+
+            <div>
+                <label for="accoundType">Your accound type: </label>
+                <select name="accoundType" id="accoundType">
+                    <option value="standard">Standard accound</option>
+                    <option value="premium">Premium accound</option>
+                    <option value="vip">VIP accound</option>
+                </select>
+            </div>
+
+            <button id="reserve">Reserve</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>Dev: Bubliksiur</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
