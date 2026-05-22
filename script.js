@@ -13,6 +13,7 @@ class User  {
         this.placeNum = placeNum;
         this.playTime = playTime;
         this.accType = accType;
+        this.paid = false;
     }
 }
 
@@ -33,13 +34,13 @@ function addUser(){
 
                         localStorage.setItem("reservations", JSON.stringify(arr));
                         window.location.href = "info.html";
-                        
+
                         console.log("Well done");
                     }
                 }
             }
         }
-    }
+    };
 }
 
 reserveBtn.addEventListener('click', (e) => {
