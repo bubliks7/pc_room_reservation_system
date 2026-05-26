@@ -25,7 +25,7 @@ function addUser(){
                     const newUser = new User(nicknameInput.value, Number(placeNumberInput.value), Number(playingTimeInput.value), accoundTypeSelect.value);
 
                     const isReserved = arr.some(user => user.placeNum === newUser.placeNum);
-                    if(isReserved) console.log("This place to play games is already reserved");
+                    if(isReserved) alert("This place to play games is already reserved");
                     else{
                         arr.push(newUser);
                         nicknameInput.value = "";
@@ -35,7 +35,6 @@ function addUser(){
                         localStorage.setItem("reservations", JSON.stringify(arr));
                         window.location.href = "info.html";
 
-                        console.log("Well done");
                     }
                 }
             }

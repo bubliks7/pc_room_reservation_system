@@ -4,10 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Your informations</title>
+    <style>
+        body{
+            background-color: rgb(213, 213, 213);
+        }
+
+        .container{
+            display: flex;
+        }
+
+        .list div{
+            padding: 20px;
+            margin: 0px 10px 4px 0px;
+            border: 2px solid rgb(0, 21, 255);
+            border-radius: 10px;
+            background-color: rgb(255, 255, 255);
+        }
+
+        .list button{
+            margin-bottom: 20px;
+        }
+    </style>
 </head>
 <body>
     <h1>informations</h1>
-    <div id="list"></div>
+    <div class="container">
+        <div class="list" id="list"></div>
+    </div>
     <a href="/index.html">Reserve</a>
     <script src="info.js"></script>
 </body>
